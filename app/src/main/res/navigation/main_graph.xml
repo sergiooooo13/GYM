@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.beta.gym.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_addCronoFragment"
+            app:destination="@id/addCronoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addCronoFragment"
+        android:name="com.beta.gym.AddCronoFragment"
+        android:label="fragment_add_crono"
+        tools:layout="@layout/fragment_add_crono" />
+</navigation>
