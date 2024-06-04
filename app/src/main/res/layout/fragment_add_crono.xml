@@ -5,6 +5,11 @@
     android:layout_height="match_parent"
     tools:context=".AddCronoFragment">
 
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" /> <!-- Asegúrate de que esto sea match_parent -->
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/btnPlay"
         android:layout_width="wrap_content"
