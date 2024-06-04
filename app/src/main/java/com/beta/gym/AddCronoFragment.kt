@@ -44,7 +44,7 @@ class AddCronoFragment : Fragment() {
 
         // Usa el valor de "semana" según tus necesidades
         tiempos = when (semana) {
-            0 -> CronoTiempos(1000L, 5000L)
+            0 -> CronoTiempos(30000L, 150000L)
             1 -> CronoTiempos(45000L, 135000L)
             2 -> CronoTiempos(60000L, 120000L)
             3 -> CronoTiempos(75000L, 105000L)
@@ -60,7 +60,7 @@ class AddCronoFragment : Fragment() {
         // Inicializar ViewPager2
         viewPager = view.findViewById(R.id.viewPager)
         items = mutableListOf(
-            CarouselItem("Descanso", "00:05")
+            CarouselItem("Descanso", "05:00")
         )
         for (i in 1..6) {
             items.add(CarouselItem("Correr (${i}/6)", convertirALaHora(tiempos.correr)))
